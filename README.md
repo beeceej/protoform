@@ -1,8 +1,8 @@
 # Protoform
 
-Convert Java POJO's to [https://developers.google.com/protocol-buffers/](Protocol Buffers).
+Convert Java POJO's to [Protobuf](https://developers.google.com/protocol-buffers/).
 
-## Why Protocol Buffers:
+## Why Protocol Buffers:aa
 Protocol Buffers are awesome for a couple reasons.
 * Language Agnostic
  * Create a protobuf file, compile/generate code for many languages
