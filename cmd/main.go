@@ -16,7 +16,7 @@ func main() {
 	inFile := flag.String("in-file", "", "Input File")
 	pkg := flag.String("package", "", "Package of proto")
 	out := flag.String("out-file", "", "Output File")
-	
+
 	flag.Parse()
 
 	b, err := ioutil.ReadFile(*inFile)
@@ -28,7 +28,7 @@ func main() {
 		OutFile: *out,
 		Syntax:  "proto3",
 	}.Parse(string(b))
-	fmt.Println(pb)
+
 	snakeCaseFileName := properCaseToSnakeCase(pb.FileName)
 	var (
 		f *os.File
