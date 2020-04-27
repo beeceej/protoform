@@ -1,4 +1,7 @@
 # Protoform
+Please feel free to submit issues / PR's if there are bugs (There almost certainly are many).
+Thanks!
+
 
 Convert Java POJO's to [Protobuf](https://developers.google.com/protocol-buffers/).
 
