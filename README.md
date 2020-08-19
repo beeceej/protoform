@@ -3,16 +3,7 @@ Please feel free to submit issues / PR's if there are bugs (There almost certain
 Thanks!
 
 
-Convert Java POJO's to [Protobuf](https://developers.google.com/protocol-buffers/).
-
-## Why Protocol Buffers:aa
-Protocol Buffers are awesome for a couple reasons.
-* Language Agnostic
- * Create a protobuf file, compile/generate code for many languages
-* Efficient Serialization (`[]byte` over the wire)
-  * Protobuf bakes in serialization, and the code it generates gives you everything needed to work with the format
-For more info, read here. [https://developers.google.com/protocol-buffers/docs/overview](https://developers.google.com/protocol-buffers/docs/overview)
-
+Convert Java POJO's to [Protobuf](https://developers.google.com/protocol-buffers/) with super hacky regexes
 
 # What this project is able to do today:
 
@@ -60,13 +51,13 @@ message message {
 `$ make build`
 
 # Usage
-`$ ./pfrm --in-file="$SOME_JAVA_FILE"`  
+`$ ./protoform --in-file="$SOME_JAVA_FILE"`  
 Will take the java file and spit out the resulting proto in the working directory
 
-`$ ./pfrm --in-file="$SOME_JAVA_FILE" --out-file=proto`  
+`$ ./protoform --in-file="$SOME_JAVA_FILE" --out-file=proto`  
 Will take the java file and spit out the resulting proto in the directory `proto/`
 
-`$ ./pfrm --in-file="$SOME_JAVA_FILE" --out-file=proto --package="$SOME_PACKAGE"`  
+`$ ./protoform --in-file="$SOME_JAVA_FILE" --out-file=proto --package="$SOME_PACKAGE"`  
 Will take the java file and spit out the resulting proto in the directory `proto/"$SOME_PACKAGE"`
 
 
